@@ -6,6 +6,7 @@ export async function fetcher<T>(
 ): Promise<T> {
   try {
     const res = await api.get<T>(url, { params });
+    // console.log("API Response:", res.data);
     return res.data;
   } catch (error: unknown) {
     if (axios.isAxiosError(error)) {

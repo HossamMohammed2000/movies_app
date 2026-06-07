@@ -6,7 +6,6 @@ import Link from "next/link";
 import Footer from "@/_Components/layouts/Footer";
 import { FavouritesProvider } from "@/context/favouriteContext";
 
-
 export default function RootLayout({
   children,
 }: {
@@ -23,15 +22,17 @@ export default function RootLayout({
               </Link>
 
               <nav>
-                <Link href="/" className="text-gray-600 hover:text-gray-900 mr-4">
-                  Home
-                </Link>
-
                 <Link
-                  href="/genres"
+                  href="/"
                   className="text-gray-600 hover:text-gray-900 mr-4"
                 >
-                  Genres
+                  Home
+                </Link>
+                <Link
+                  href="/geners"
+                  className="text-gray-600 hover:text-gray-900 mr-4"
+                >
+                  Geners
                 </Link>
 
                 <Link
@@ -54,7 +55,6 @@ export default function RootLayout({
                 >
                   Search
                 </Link>
-
 
                 <Link
                   href="/favourites"

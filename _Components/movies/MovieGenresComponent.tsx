@@ -3,7 +3,7 @@
 import Loader from "@/_Components/ui/Loader";
 import { MovieGenres } from "@/types/movie";
 
-function MovieGenresComponent({ genres }: { genres: MovieGenres }) {
+export function MovieGenresComponent({ genres }: { genres: MovieGenres }) {
   if (!genres?.genres?.length) {
     return (
       <div className="flex justify-center items-center py-20">

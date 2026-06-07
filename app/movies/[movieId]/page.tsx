@@ -4,7 +4,7 @@ import { Movie } from "@/types/movie";
 import { PageProps } from "@/types/page-props";
 
 export default async function MoviePage({ params }: PageProps) {
-  const movieId = params.movieId; // ✅ دلوقتي Server Component params object عادي
+  const movieId = params.movieId; 
   const API_KEY = process.env.NEXT_PUBLIC_TMDB_KEY;
 
   if (!movieId || !API_KEY) {
